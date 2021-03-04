@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        circle {
+            fill: purple
+        }
+
+        circle:hover {
+            fill: blue
+        }
+
+        text {
+            fill: blue;
+            stroke: indianred;
+            font-size: 60px;
+            stroke-width: 2;
+            stroke-dasharray: 10 2;
+        }
+
+        text:hover {
+            fill: rgb(195, 0, 255);
+            stroke: rgb(104, 0, 0);
+            font-size: 100px;
+            stroke-width: 2;
+            stroke-dasharray: 10 2;
+        }
+    </style>
+</head>
+
+<body>
+
+    <svg viewBox="-100 -100 1000 1000">   
+        <circle cx="100" cy="100" r="60" fill="purple"/>
+        <text x="25" y="457" font-size="60" fill="blue" stroke="indianred" stroke-width="2" stroke-dasharray="10 2">Camille</text>
+        <line x1="20" y1="250" x2="500" y2="300" stroke="pink" stroke-width="20"/>
+           <rect x="300" y="300" width="200" height="100" fill="green" stroke="orange"/>
+    </svg>
+
+    <script>
+        const circle = document.getElementById('c')
+        let isPurple = true
+        circle.addEventListener('click', () => {
+            isPurple = !isPurple
+            circle.setAttribute('fill', isPurple ? 'purple' : 'blue')
+        })
+    </script>
+
+</body>
