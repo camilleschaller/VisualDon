@@ -7,7 +7,7 @@ const villes = [
   { nom: 'Vevey', population: 19827 },
 ]
 
-const nomsDesVilles = villes // <- utilisez une la méthode adaptée sur "villes"
+const nomsDesVilles = villes.map(ville => ville.nom);
 
 console.log('Noms des villes', nomsDesVilles)
 
@@ -22,7 +22,7 @@ console.log('Noms des villes', nomsDesVilles)
 ]
 */
 
-const villesDePlusDe30000Habitants = villes
+const villesDePlusDe30000Habitants = villes.filter(ville => ville.population > 30000);
 
 console.log('Ville de plus de 30000 habitants', villesDePlusDe30000Habitants)
 
@@ -39,13 +39,13 @@ console.log('Ville de plus de 30000 habitants', villesDePlusDe30000Habitants)
   ]
 */
 
-const habitantsYverdon = villes
+const habitantsYverdon = villes[1].population;
 
 console.log('Nombre d\'habitants à Yverdon', habitantsYverdon)
 
 // 30143
 
-const sommeHabitants = villes
+const sommeHabitants = villes.reduce((r, d) => r + d.population,0);
 
 console.log('Nombre total d\'habitants', sommeHabitants)
 
@@ -84,10 +84,8 @@ const compare = (a, b) =>
 
 console.log(`
 Réponses justes:
-
 1. Noms des villes: ${compare(nomsDesVilles, correct.nomsDesVilles)}
 2. Ville de plus de 30000 habitants: ${compare(villesDePlusDe30000Habitants, correct.villesDePlusDe30000Habitants)}
 3. Nombre d\'habitants à Yverdon: ${compare(habitantsYverdon, correct.habitantsYverdon)}
 4. Nombre total d\'habitants: ${compare(sommeHabitants, correct.sommeHabitants)}
-
 `)
