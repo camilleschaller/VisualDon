@@ -6,7 +6,7 @@ https://www.kaggle.com/harshitshankhdhar/imdb-dataset-of-top-1000-movies-and-tv-
 
 Le but serait de faire une infographique sur les 100 meilleurs films de tout les temps. Le jeu de données comportent 1000 lignes mais je ne vais garder que les 100 premières.
 
-En plus de ç a, j'aimerai bien faire 3 minis infographies sur les 3 meilleurs films du classement si je trouve d'autres jeux de données qui pourrait être intéressants par exemple les données google trend pour montrer la popularité au fil du temps
+En plus de ça, j'aimerai bien faire 3 minis infographies sur les 3 meilleurs films du classement si je trouve d'autres jeux de données qui pourrait être intéressants par exemple les données google trend pour montrer la popularité au fil du temps
 
 ## <u>Type de graphique</u>
 
