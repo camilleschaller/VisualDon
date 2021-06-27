@@ -1,0 +1,12 @@
+var svg = d3.select("#example")
+  .append("svg");
+
+var t = textures.lines()
+    .orientation("3/8", "7/8")
+  .stroke("darkorange");
+
+svg.call(t);
+
+svg.append("circle")
+  .attr("r", radius)
+  .style("fill", t.url());
